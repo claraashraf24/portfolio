@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graduation Project</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background: #111;
+        color: white;
+        line-height: 1.6;
+        padding: 20px;
+      }
+      .hero {
+        text-align: center;
+        margin: 2rem auto;
+      }
+      .hero h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        color: white;
+      }
+      .hero h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        color: #ccc;
+      }
+      .hero img {
+        display: block;
+        margin: 0 auto;
+        max-width: 60%;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      }
+      .section {
+        margin-bottom: 3rem;
+      }
+      .content-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2rem 0;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+      .content-row img {
+        flex: 1;
+        max-width: 320px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+      .content-row p {
+        flex: 2;
+      }
+      .content-row.reverse {
+        flex-direction: row-reverse;
+      }
+      iframe {
+        width: 100%;
+        height: 400px;
+        border-radius: 10px;
+        margin: 2rem 0;
+      }
+      .button-link {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #ff4d6d;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+      .button-link:hover {
+        background: #e63e5a;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div class="hero" data-aos="zoom-in">
+      <h1>
+        Deep Learning-Based 3D Segmentation & Classification of Brain Tumors
+      </h1>
+      <h3>Cairo University — Graduation Project 2024</h3>
+      <img
+        src="../assets/images/project_cover.jpg"
+        alt="Graduation Project Cover"
+        data-aos="fade-up"
+      />
+    </div>
+
+    <!-- Introduction -->
+    <div class="section">
+      <p data-aos="fade-right">
+        Our project focused on developing an intelligent system to classify and
+        segment brain tumors from MRI scans, aiming to support doctors in
+        diagnosis and surgical planning.
+      </p>
+      <p data-aos="fade-left">
+        By combining deep learning, advanced imaging, and augmented reality, we
+        created an end-to-end tool that brings AI into real-world healthcare.
+      </p>
+    </div>
+
+    <!-- Storytelling with Alternating Layout -->
+    <div class="section">
+      <div class="content-row" data-aos="fade-up">
+        <img
+          src="../assets/images/mri_example.jpg"
+          alt="MRI Scan"
+          data-aos="zoom-in"
+        />
+        <p data-aos="fade-left">
+          MRI scans present complex patterns that make manual tumor detection
+          difficult and time-consuming.
+        </p>
+      </div>
+
+      <div class="content-row reverse" data-aos="fade-up">
+        <img
+          src="../assets/images/cnn_model.png"
+          alt="CNN Model Diagram"
+          data-aos="zoom-in"
+        />
+        <p data-aos="fade-right">
+          We trained CNN-based models (InceptionV3, SegNet) in TensorFlow to
+          accurately classify and segment tumors.
+        </p>
+      </div>
+
+      <div class="content-row" data-aos="fade-up">
+        <img
+          src="../assets/images/dicom_viewer.png"
+          alt="DICOM Viewer Screenshot"
+          data-aos="zoom-in"
+        />
+        <p data-aos="fade-left">
+          We built a DICOM viewer app to visualize MRI data in 2D/3D, improving
+          doctors’ workflow.
+        </p>
+      </div>
+
+      <div class="content-row reverse" data-aos="fade-up">
+        <img
+          src="../assets/images/ar_tool.jpg"
+          alt="AR Tool"
+          data-aos="zoom-in"
+        />
+        <p data-aos="fade-right">
+          Finally, we integrated an AR tool using Unity + C, enabling
+          interactive 3D visualization of medical models.
+        </p>
+      </div>
+    </div>
+
+    <!-- Contributions -->
+    <div class="section" data-aos="fade-up">
+      <h2>Key Highlights</h2>
+      <ul>
+        <li>
+          Developed deep learning models for tumor segmentation and
+          classification.
+        </li>
+        <li>Created a desktop DICOM viewer for MRI visualization.</li>
+        <li>
+          Integrated augmented reality (Unity + C) for interactive 3D
+          exploration.
+        </li>
+        <li>
+          <strong>Award:</strong> Best Graduation Project in Biomedical
+          Engineering, and top 18 across 185 projects at Cairo University.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Video -->
+    <div class="section" data-aos="fade-up">
+      <h2>Watch Demo Video</h2>
+      <iframe
+        src="https://www.youtube.com/embed/qQKupwvmjVI"
+        allowfullscreen
+        data-aos="zoom-in"
+      ></iframe>
+    </div>
+
+    <!-- Closing -->
+    <div class="section" style="text-align: center" data-aos="fade-up">
+      <p>
+        I’m grateful to my professors, teammates, and family for their guidance
+        and support throughout this journey.
+      </p>
+      <a
+        href="https://www.youtube.com/watch?v=qQKupwvmjVI"
+        target="_blank"
+        class="button-link"
+        data-aos="zoom-in"
+      >
+        Watch Full Project on YouTube →
+      </a>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+  </body>
+</html>

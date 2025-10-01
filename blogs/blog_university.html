@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biomedical Engineering Life — Cairo University</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background: #111;
+        color: white;
+        line-height: 1.8;
+        padding: 20px;
+      }
+
+      /* Animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes zoomIn {
+        from {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .hero {
+        text-align: center;
+        margin: 2rem auto;
+        animation: fadeInUp 1s ease forwards;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .hero h3 {
+        font-size: 1.3rem;
+        color: #ccc;
+        margin-bottom: 1.5rem;
+      }
+      .hero img {
+        display: block;
+        margin: 0 auto; /* center the image */
+        max-width: 60%;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+        animation: zoomIn 1.5s ease forwards;
+      }
+
+      .section {
+        margin: 3rem 0;
+        animation: fadeInUp 1.2s ease forwards;
+      }
+      .content-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+      }
+      .content-row img,
+      .content-row video {
+        flex: 1;
+        max-width: 320px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease;
+      }
+      .content-row img:hover,
+      .content-row video:hover {
+        transform: scale(1.05);
+      }
+      .content-row p {
+        flex: 2;
+        font-size: 1.05rem;
+      }
+      .content-row.reverse {
+        flex-direction: row-reverse;
+      }
+
+      h2 {
+        color: #ff4d6d;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style-type: '✔ ';
+        margin-left: 1.2rem;
+      }
+
+      .closing {
+        text-align: center;
+        margin-top: 3rem;
+      }
+
+      .family-photos {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin: 1.5rem 0;
+      }
+
+      .family-photos img {
+        max-width: 30%; /* smaller than before */
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease;
+      }
+
+      .family-photos img:hover {
+        transform: scale(1.05);
+      }
+
+      @media (max-width: 768px) {
+        .family-photos img {
+          max-width: 80%; /* stack and resize on mobile */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>Biomedical Engineering at Cairo University</h1>
+      <h3>A Journey from Freshman Curiosity to Senior Year Achievements</h3>
+      <img
+        src="../assets/images/cairo_unviersity.jpg"
+        alt="Cairo University Campus"
+      />
+    </div>
+
+    <!-- Year 1-2 -->
+    <div class="section">
+      <div class="content-row">
+        <img src="../assets/images/planning_pic.jpg" alt="Foundation Years" />
+        <p>
+          <strong>Years 1 & 2:</strong> The first two years were all about the
+          basics: anatomy, physiology, physics, and electronics. It felt like
+          stepping into two worlds at once: medicine and engineering. Honestly,
+          it was overwhelming at times, but also exciting because it laid the
+          ground for everything that came after. Most days were spent buried in
+          classrooms and libraries, slowly piecing together the foundation we’d
+          build on later.
+        </p>
+      </div>
+    </div>
+
+    <!-- Year 3 -->
+    <div class="section">
+      <div class="content-row reverse">
+        <img src="../assets/images/cat_pic.jpg" alt="Labs in Year 3" />
+        <p>
+          <strong>Year 3:</strong> We finally got into courses like imaging,
+          medical devices, and software systems, and it wasn’t just theory
+          anymore. Labs and projects started to connect the dots — I could
+          actually see how what we were learning could turn into real healthcare
+          solutions. It was the first time I felt, “okay, this is why I chose
+          biomedical engineering.”
+        </p>
+      </div>
+    </div>
+
+    <!-- Year 4-5 and Senior Year -->
+    <div class="section">
+      <div class="content-row">
+        <video
+          controls
+          width="350"
+          style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3)"
+        >
+          <source src="../assets/images/senior_team.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p>
+          <strong>Years 4 & 5:</strong> Senior year was all about sleepless
+          nights, working side by side with my team, and of course, our
+          graduation project. It was exhausting but honestly the most rewarding
+          part of the whole journey. Every assignment, every presentation felt
+          less like schoolwork and more like real preparation for what comes
+          after.
+        </p>
+      </div>
+    </div>
+
+    <!-- Graduation Project -->
+    <div class="section">
+      <h2>🎓 Graduation Project</h2>
+      <p>
+        Our project focused on
+        <em>3D Brain Tumor Segmentation and AR Visualization</em>. We combined
+        CNNs, TensorFlow, and Unity to create a system that could aid doctors in
+        diagnosis and surgical planning.
+      </p>
+      <p>
+        👉 You can read the full story
+        <a
+          href="blog_graduation.html"
+          style="color: #ff4d6d; text-decoration: underline"
+          >here</a
+        >.
+      </p>
+    </div>
+
+    <!-- Memories -->
+    <div class="section">
+      <h2>💡 Key Memories</h2>
+      <ul>
+        <li>
+          Morning walks to campus, usually rushing because I was almost late.
+        </li>
+        <li>
+          Late nights working on assignments, surviving on tea, snacks, and
+          random chats with friends.
+        </li>
+        <li>
+          Exams that felt impossible at the time but later just turned into
+          funny stories.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Closing -->
+    <div class="closing">
+      <p>
+        Biomedical Engineering at Cairo University wasn’t just an education, it
+        was a life chapter that gave me knowledge, resilience, and friendships
+        I’ll always carry with me.
+      </p>
+
+      <div class="family-photos">
+        <img src="../assets/images/family_photo_1.jpg" alt="Family Photo 1" />
+        <img src="../assets/images/family_photo_2.jpg" alt="Family Photo 2" />
+      </div>
+
+      <p>
+        Grateful for my professors, friends, and family who made it possible.
+      </p>
+    </div>
+  </body>
+</html>

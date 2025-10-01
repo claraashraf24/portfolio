@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drums Blog</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background: #111;
+        color: white;
+        line-height: 1.8;
+        padding: 20px;
+      }
+
+      /* Animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes zoomIn {
+        from {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .hero {
+        text-align: center;
+        margin: 2rem auto;
+        animation: fadeInUp 1s ease forwards;
+      }
+      .hero h1 {
+        font-size: 2.3rem;
+        margin-bottom: 0.5rem;
+      }
+      .hero h3 {
+        font-size: 1.2rem;
+        color: #ccc;
+        margin-bottom: 1.5rem;
+      }
+      .hero img {
+        display: block;
+        margin: 0 auto; /* centers the cover */
+        max-width: 50%; /* smaller and balanced */
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+        animation: zoomIn 1.5s ease forwards;
+      }
+
+      .section {
+        margin: 3rem 0;
+        animation: fadeInUp 1.2s ease forwards;
+      }
+      .content-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+      }
+      .content-row img,
+      .content-row video,
+      .content-row iframe {
+        flex: 1;
+        max-width: 350px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease;
+      }
+      .content-row img:hover,
+      .content-row video:hover,
+      .content-row iframe:hover {
+        transform: scale(1.05);
+      }
+      .content-row p {
+        flex: 2;
+        font-size: 1.05rem;
+      }
+      .content-row.reverse {
+        flex-direction: row-reverse;
+      }
+
+      h2 {
+        color: #ff4d6d;
+        margin-bottom: 1rem;
+      }
+
+      .closing {
+        text-align: center;
+        margin-top: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>🥁 My Drumming Journey</h1>
+      <h3>Finding rhythm, patience, and joy with every beat</h3>
+      <img src="../assets/images/drums_cover.jpg" alt="Drum Kit Cover" />
+    </div>
+
+    <!-- Intro -->
+    <div class="section">
+      <p>
+        I started learning drums to just clear my head and focus on rhythm. It’s
+        loud, messy, and fun, every time I play, I feel like I’m slowly getting
+        better.
+      </p>
+    </div>
+
+    <!-- Practice Video -->
+    <div class="section">
+      <h2>🎥 Practice Session</h2>
+      <div class="content-row">
+        <video controls>
+          <source src="../assets/images/drums_practice.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p>
+          I’ve been getting into different drumming styles: West African beats
+          with their raw energy, and jazz with its flow and freedom. Both are
+          completely different, but that’s what keeps me hooked.
+        </p>
+      </div>
+    </div>
+
+    <!-- Drum Image -->
+    <div class="section">
+      <h2>📸 A Snapshot</h2>
+      <div class="content-row reverse">
+        <img src="../assets/images/drums_photo.jpg" alt="Drum Setup" />
+        <p>
+          Sitting at the kit feels like my own space. I mess up a lot, but I can
+          tell I’m getting better each time I play.
+        </p>
+      </div>
+    </div>
+
+    <!-- Favorite Song -->
+    <div class="section">
+      <h2>🎶 Favorite Song to Play Along</h2>
+      <div class="content-row">
+        <iframe
+          src="https://www.youtube.com/embed/-KqBcHc-MOQ"
+          title="Favorite Song"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <p>
+          One song I always enjoy drumming to is <em>Let Her Go</em> by
+          Passenger, the rhythm just feels great to play.
+        </p>
+      </div>
+    </div>
+
+    <!-- Closing -->
+    <div class="closing">
+      <p>
+        The drums keep teaching me patience and rhythm in a way nothing else
+        has. I’m still learning, still missing beats, but that’s part of the
+        fun.
+      </p>
+    </div>
+  </body>
+</html>
