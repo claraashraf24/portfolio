@@ -1,44 +1,25 @@
-# vCard - Personal portfolio
+# Clara Yousif — Portfolio
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+Personal portfolio for Clara Yousif, an AI and MLOps engineer based in Ontario, Canada.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+## Local preview
 
-## Demo
-
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
-
-## Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-## Installing vCard
-
-To install **vCard**, follow these steps:
-
-Linux and macOS:
+The site is intentionally dependency-free. From the repository root, run:
 
 ```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
+python3 -m http.server 8000
 ```
 
-Windows:
+Then open `http://localhost:8000`.
 
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+## Deploying to GitHub Pages
 
-## Contact
+In the repository settings, open **Pages**, choose **Deploy from a branch**, select `main` and `/ (root)`, then save. The site uses relative asset paths and requires no build step.
 
-If you want to contact me you can reach me at [Twitter](https://www.x.com/codewithsadee_).
+## Structure
 
-## License
-
-MIT
+- `index.html` — main portfolio
+- `assets/css/style.css` — responsive visual system
+- `assets/js/script.js` — navigation and reveal interactions
+- `assets/images/` — project and personal media migrated from the previous portfolio
+- `blogs/` — long-form stories retained from the previous portfolio
