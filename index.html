@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#08130f" />
     <meta property="og:title" content="Clara Yousif — AI & MLOps Engineer" />
     <meta property="og:description" content="AI systems, MLOps pipelines, automation, and thoughtful software." />
-    <meta property="og:image" content="./assets/images/project_cover.jpg" />
+    <meta property="og:image" content="./assets/images/projects/brain-tumor-segmentation-cover.webp" />
     <title>Clara Yousif — AI & MLOps Engineer</title>
     <link rel="icon" href="./assets/images/logo.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -88,9 +88,21 @@
             <a href="./projects/project.html?id=lyrisense"><img src="./assets/images/projects/lyrisense-ui.webp" alt="LyriSense recommendation interface" /></a>
             <div class="project-body"><p class="project-type">NLP · Recommendation</p><h3>LyriSense</h3><p>Classifies emotion in song lyrics and connects the model to a FastAPI service and filterable music-discovery interface.</p><div class="tags"><span>NLP</span><span>scikit-learn</span><span>FastAPI</span><span>Streamlit</span></div><a class="arrow-link" href="./projects/project.html?id=lyrisense">Read case study <span>↗</span></a></div>
           </article>
-          <article class="project-card reveal"><a href="./projects/project.html?id=brain-tumor-ar"><img src="./assets/images/project_cover.jpg" alt="Brain tumor segmentation and augmented-reality visualization project" /></a><div class="project-body"><p class="project-type">Award-winning · Medical Imaging</p><h3>3D Brain Tumor Segmentation &amp; AR</h3><p>A CNN-based tumor segmentation and classification workflow connected to a DICOM MRI viewer and Unity AR experience for interactive 3D visualization.</p><div class="tags"><span>TensorFlow</span><span>DICOM</span><span>CNNs</span><span>Unity</span></div><p class="award">✦ Best Biomedical Engineering Graduation Project · Top 18 of 185</p><a class="arrow-link" href="./projects/project.html?id=brain-tumor-ar">Read case study <span>↗</span></a></div></article>
+          <article class="project-card reveal"><a href="./projects/project.html?id=brain-tumor-ar"><img src="./assets/images/projects/brain-tumor-segmentation-cover.webp" alt="Scientific visualization of MRI tumor segmentation and 3D reconstruction" /></a><div class="project-body"><p class="project-type">Award-winning · Medical Imaging</p><h3>3D Brain Tumor Segmentation &amp; AR</h3><p>A U-Net segmentation and CNN classification workflow connected to a DICOM MRI viewer and Unity AR experience for interactive 3D visualization.</p><div class="tags"><span>PyTorch</span><span>U-Net</span><span>DICOM</span><span>Unity</span></div><p class="award">✦ Finalist · Best Engineering Capstone Project</p><a class="arrow-link" href="./projects/project.html?id=brain-tumor-ar">Read case study <span>↗</span></a></div></article>
         </div>
         <div class="center"><a class="button button-outline" href="./projects/">Explore all project case studies <span>↗</span></a></div>
+      </section>
+
+      <section class="section domains" id="domains">
+        <div class="section-heading reveal"><div><p class="eyebrow">Industry domains</p><h2>Technical range with <em>real context.</em></h2></div><p>My work spans regulated, data-intensive, and operational environments where reliability and explainability matter as much as model quality.</p></div>
+        <div class="domain-grid">
+          <article class="domain-card reveal"><span>01</span><h3>Healthcare &amp; Medical Imaging</h3><p>MRI segmentation, clinical-risk calibration, hospital-flow simulation, healthcare reporting, procurement analytics, and PHIPA-aware governance.</p></article>
+          <article class="domain-card reveal"><span>02</span><h3>Telecom &amp; Infrastructure</h3><p>Millions of device records, network automation, incident correlation, root-cause reasoning, service monitoring, and SLA risk.</p></article>
+          <article class="domain-card reveal"><span>03</span><h3>Conversational &amp; Language AI</h3><p>Speech emotion, diarization, transcription, document retrieval, ticket triage, evidence extraction, recommendations, and summarization.</p></article>
+          <article class="domain-card reveal"><span>04</span><h3>Data Platforms &amp; Analytics</h3><p>Distributed PySpark ETL, medallion architecture, PostgreSQL/PostGIS, MLflow tracking, dashboards, reporting, and data-quality controls.</p></article>
+          <article class="domain-card reveal"><span>05</span><h3>Automotive &amp; Delivery Tooling</h3><p>CI/CD and build support for LiDAR software, Python/Bash automation, reproducible workflows, and developer-facing troubleshooting documentation.</p></article>
+          <article class="domain-card reveal"><span>06</span><h3>Community &amp; Consumer Products</h3><p>Career discovery, local experiences, Arabic-first community tools, ministry planning, accessibility prototypes, and human-centered interfaces.</p></article>
+        </div>
       </section>
 
       <section class="section capabilities" id="capabilities">
@@ -103,26 +115,35 @@
         </div>
       </section>
 
+      <section class="section open-source">
+        <div class="section-heading reveal"><div><p class="eyebrow">Open source</p><h2>Reproducing results,<br><em>contributing upstream.</em></h2></div><p>I’ve contributed experimental reproduction logs to Castorini’s widely used information-retrieval toolkits, documenting expected metrics and environment-specific constraints.</p></div>
+        <div class="oss-grid">
+          <a class="oss-card reveal" href="https://github.com/castorini/anserini/pull/3085" target="_blank" rel="noreferrer"><p>Apache Anserini · PR #3085</p><h3>MS MARCO BM25 &amp; dense retrieval onboarding</h3><span>Windows 11 + Ubuntu · Java 21 · 6,980 queries · MRR@10 0.187412</span><b>View upstream contribution ↗</b></a>
+          <a class="oss-card reveal" href="https://github.com/castorini/pyserini/pull/2382" target="_blank" rel="noreferrer"><p>Pyserini · PR #2382</p><h3>BM25, NFCorpus BGE &amp; SPLADE reproductions</h3><span>Sparse retrieval · dense retrieval · learned sparse retrieval · tolerance verification</span><b>View upstream contribution ↗</b></a>
+        </div>
+      </section>
+
       <section class="section experience" id="experience">
         <div class="section-heading reveal"><div><p class="eyebrow">Experience</p><h2>Engineering across the <em>whole system.</em></h2></div><p>From telecom-scale delivery to applied AI, I work comfortably between code, infrastructure, data, and people.</p></div>
         <div class="timeline">
-          <article class="timeline-row reveal"><time>2025</time><div><h3>Software / DevOps Senior Engineer</h3><p>Giza Systems · National IMEI program</p></div><p>Built Python and SQL data workflows, maintained CI/CD, and supported containerized deployments processing telecom-scale device data.</p></article>
-          <article class="timeline-row reveal"><time>2024—25</time><div><h3>DevOps / Delivery Engineer</h3><p>Huawei · AUTIN Team</p></div><p>Automated network delivery systems, maintained pipelines, and troubleshot Linux, API, and database issues.</p></article>
+          <article class="timeline-row reveal"><time>2025</time><div><h3>MLOps Engineer</h3><p>PULSE, previously Giza Systems · National IMEI program</p></div><p>Built Python, SQL, and PostgreSQL pipelines for millions of telecom records, then added data-quality checks, monitoring, and dashboards that reduced troubleshooting time by 25%.</p></article>
+          <article class="timeline-row reveal"><time>2024—25</time><div><h3>DevOps Engineer Intern</h3><p>Huawei</p></div><p>Built CI/CD and Bash automation that improved deployment speed by 30%, and diagnosed failures through logs, system metrics, and service behavior.</p></article>
           <article class="timeline-row reveal"><time>2024</time><div><h3>CI/CD &amp; Support Intern</h3><p>Valeo Egypt</p></div><p>Supported automotive LiDAR pipelines, resolved builds with Python and Bash, and documented recurring issues.</p></article>
           <article class="timeline-row reveal"><time>2022</time><div><h3>Support Intern</h3><p>Canon Medical Systems</p></div><p>Supported hospital imaging software and created practical documentation for clinical teams.</p></article>
         </div>
+        <div class="volunteer reveal"><p class="eyebrow">Leadership &amp; community</p><div><h3>Technical Team Member · GDG Sheridan</h3><time>2025—Present</time></div><p>Support technical workshops and student learning across machine learning, data science, software development, and AI tools; collaborate on community sessions that help students explore developer technologies.</p></div>
       </section>
 
       <section class="section about" id="about">
         <div class="about-lead reveal"><p class="eyebrow">About me</p><h2>Curious by default.<br /><em>Practical by design.</em></h2></div>
-        <div class="about-copy reveal"><p>I’m an Egyptian-Canadian engineer based in Milton, Ontario. I started in biomedical engineering at Cairo University, where medical imaging, signals, software, and healthcare operations first came together for me. Today, I’m studying AI Development &amp; Applications at Sheridan College and building products that connect intelligent models with dependable systems.</p><p>My professional path has crossed telecom infrastructure, automotive LiDAR delivery, hospital imaging support, national-scale device data, and applied AI. That range taught me to think beyond the model: data quality, deployment, observability, documentation, and the operator experience all determine whether technology is genuinely useful.</p><p>I’m happiest turning a research idea into something tangible—an automation that saves a team hours, an interface that clarifies noisy data, or an ML pipeline that keeps working after the demo. Outside engineering, I practice drums, explore digital art, read research and fiction, and stay curious about emerging areas such as quantum AI.</p><div class="education"><span>Education</span><div><strong>Advanced Diploma, AI Development &amp; Applications</strong><small>Sheridan College · 2025—Present</small></div><div><strong>BSc, Biomedical Engineering</strong><small>Cairo University · 2019—2024</small></div></div></div>
+        <div class="about-copy reveal"><p>I’m an Egyptian-Canadian engineer based in Milton, Ontario. I started in biomedical engineering at Cairo University, where medical imaging, signals, software, and healthcare operations first came together for me. Today, I’m completing Sheridan’s postgraduate Artificial Intelligence Development &amp; Applications program and building products that connect intelligent models with dependable systems.</p><p>My professional path has crossed telecom infrastructure, automotive LiDAR delivery, hospital imaging support, national-scale device data, and applied AI. That range taught me to think beyond the model: data quality, deployment, observability, documentation, and the operator experience all determine whether technology is genuinely useful.</p><p>I’m happiest turning a research idea into something tangible—an automation that saves a team hours, an interface that clarifies noisy data, or an ML pipeline that keeps working after the demo. Outside engineering, I practice drums, explore digital art, read research and fiction, and stay curious about emerging areas such as quantum AI.</p><div class="education"><span>Education</span><div><strong>Postgraduate Certificate, Artificial Intelligence Development &amp; Applications · GPA 3.96/4.0</strong><small>Sheridan College · Sep 2025—Dec 2026</small></div><div><strong>BSc, Biomedical Engineering · Very Good</strong><small>Cairo University · 2019—2024</small></div></div></div>
         <div class="skills reveal"><p class="eyebrow">How I work</p><div class="skill-columns"><div><h3>Evidence first</h3><p>Baseline before optimizing<br />Metrics with context<br />Fairness and limitations documented</p></div><div><h3>Production minded</h3><p>Typed interfaces and schemas<br />Reproducible environments<br />Monitoring from day one</p></div><div><h3>Human centered</h3><p>Explainable decisions<br />Clear operational workflows<br />Documentation teams can use</p></div></div></div>
       </section>
 
       <section class="section writing" id="writing">
         <div class="section-heading reveal"><div><p class="eyebrow">Notes &amp; stories</p><h2>Outside the <em>terminal.</em></h2></div><p>Writing about the projects, places, and creative practices that have shaped how I think.</p></div>
         <div class="story-grid">
-          <a class="story reveal" href="./blogs/blog_graduation.html"><img src="./assets/images/project_cover.jpg" alt="Graduation project team and prototype" /><span>AI &amp; healthcare · 2024</span><h3>Building our award-winning graduation project</h3><p>Read the story <b>↗</b></p></a>
+          <a class="story reveal" href="./blogs/blog_graduation.html"><img src="./assets/images/projects/brain-tumor-segmentation-cover.webp" alt="MRI tumor segmentation and 3D reconstruction visualization" /><span>AI &amp; healthcare · 2024</span><h3>Building our award-winning graduation project</h3><p>Read the story <b>↗</b></p></a>
           <a class="story reveal" href="./blogs/blog_university.html"><img src="./assets/images/cairo_unviersity.jpg" alt="Cairo University" /><span>University · 2019—2024</span><h3>Biomedical engineering at Cairo University</h3><p>Read the story <b>↗</b></p></a>
           <a class="story reveal" href="./blogs/blog_drums.html"><img src="./assets/images/drums_cover.jpg" alt="Drum set" /><span>Music · 2025</span><h3>Learning rhythm, one practice at a time</h3><p>Read the story <b>↗</b></p></a>
         </div>

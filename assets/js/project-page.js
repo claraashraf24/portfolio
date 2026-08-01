@@ -1,2 +1,40 @@
-const params=new URLSearchParams(location.search);const item=window.PROJECTS.find(p=>p.id===params.get('id'));const root=document.querySelector('#project');
-if(!item){document.title='Project not found — Clara Yousif';root.innerHTML='<section class="not-found"><p class="eyebrow">404</p><h1>Project not found.</h1><a href="index.html">View all projects →</a></section>';}else{document.title=`${item.title} — Clara Yousif`;const asset=(name)=>name.startsWith('../../')?name.replace('../../','../'):name.startsWith('../')?name:`../assets/images/projects/${name}`;const gallery=item.gallery.length?`<section class="gallery">${item.gallery.map((image,i)=>`<figure><img src="${asset(image)}" alt="${item.title} authentic project screenshot ${i+1}" loading="lazy"><figcaption>Authentic output from the project repository</figcaption></figure>`).join('')}</section>`:'';root.innerHTML=`<article><section class="project-hero"><p class="eyebrow">${item.category} · ${item.year}</p><h1>${item.title}</h1><p class="lede">${item.summary}</p><div class="hero-links"><a class="button" href="https://github.com/${item.repo}" target="_blank" rel="noreferrer">View repository ↗</a><span>${item.status.includes('Collaborative')||item.status.includes('team')?'Collaborative work':'Project by Clara Yousif'}</span></div></section><figure class="cover"><img src="${asset(item.image)}" alt="${item.title} project evidence"></figure><section class="case-grid"><div><p class="eyebrow">The challenge</p><h2>Why this project exists</h2><p>${item.challenge}</p></div><div><p class="eyebrow">The approach</p><h2>What I built</h2><p>${item.solution}</p></div></section><section class="detail-grid"><div><p class="eyebrow">Technical stack</p><ul class="stack">${item.stack.map(x=>`<li>${x}</li>`).join('')}</ul></div><div><p class="eyebrow">What it demonstrates</p><ul class="highlights">${item.highlights.map(x=>`<li>${x}</li>`).join('')}</ul></div></section>${gallery}<section class="status"><p class="eyebrow">Current status &amp; honesty note</p><h2>What is real—and what remains.</h2><p>${item.status}</p></section><nav class="next"><a href="index.html">Explore all projects →</a></nav></article>`;}
+const params = new URLSearchParams(location.search);
+const item = window.PROJECTS.find((project) => project.id === params.get('id'));
+const root = document.querySelector('#project');
+
+if (!item) {
+  document.title = 'Project not found — Clara Yousif';
+  root.innerHTML = '<section class="not-found"><p class="eyebrow">404</p><h1>Project not found.</h1><a href="index.html">View all projects →</a></section>';
+} else {
+  document.title = `${item.title} — Clara Yousif`;
+  const asset = (name) => name.startsWith('../../')
+    ? name.replace('../../', '../')
+    : name.startsWith('../') ? name : `../assets/images/projects/${name}`;
+  const sourceLink = item.repo
+    ? `<a class="button" href="https://github.com/${item.repo}" target="_blank" rel="noreferrer">View repository ↗</a>`
+    : '<span style="border:1px solid currentColor;padding:1rem 1.3rem">Local / private project</span>';
+  const gallery = item.gallery.length
+    ? `<section class="gallery">${item.gallery.map((image, index) => `<figure><img src="${asset(image)}" alt="${item.title} authentic project screenshot ${index + 1}" loading="lazy"><figcaption>Authentic output from the project files</figcaption></figure>`).join('')}</section>`
+    : '';
+
+  root.innerHTML = `<article>
+    <section class="project-hero">
+      <p class="eyebrow">${item.category} · ${item.year}</p>
+      <h1>${item.title}</h1>
+      <p class="lede">${item.summary}</p>
+      <div class="hero-links">${sourceLink}<span>${item.status.includes('Collaborative') || item.status.includes('team') ? 'Collaborative work' : 'Project by Clara Yousif'}</span></div>
+    </section>
+    <figure class="cover"><img src="${asset(item.image)}" alt="${item.title} project evidence"></figure>
+    <section class="case-grid">
+      <div><p class="eyebrow">The challenge</p><h2>Why this project exists</h2><p>${item.challenge}</p></div>
+      <div><p class="eyebrow">The approach</p><h2>What I built</h2><p>${item.solution}</p></div>
+    </section>
+    <section class="detail-grid">
+      <div><p class="eyebrow">Technical stack</p><ul class="stack">${item.stack.map((value) => `<li>${value}</li>`).join('')}</ul></div>
+      <div><p class="eyebrow">What it demonstrates</p><ul class="highlights">${item.highlights.map((value) => `<li>${value}</li>`).join('')}</ul></div>
+    </section>
+    ${gallery}
+    <section class="status"><p class="eyebrow">Current status &amp; honesty note</p><h2>What is real—and what remains.</h2><p>${item.status}</p></section>
+    <nav class="next"><a href="index.html">Explore all projects →</a></nav>
+  </article>`;
+}
