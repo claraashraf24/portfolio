@@ -1,0 +1,15 @@
+.evidence-metrics{display:grid;grid-template-columns:repeat(4,1fr);background:var(--lime);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.evidence-metrics div{padding:2rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.evidence-metrics strong{display:block;font-size:clamp(1.8rem,3vw,3rem);line-height:1}.evidence-metrics span{display:block;margin-top:.65rem;font:.65rem var(--mono);text-transform:uppercase}
+.architecture,.decisions,.role-note{padding:clamp(5rem,9vw,9rem) clamp(1.25rem,7vw,8rem)}
+.architecture h2,.decisions h2,.section-label h2{font-size:clamp(2rem,4vw,4rem);max-width:850px}
+.architecture-flow{display:grid;grid-template-columns:repeat(4,1fr);margin-top:3rem;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.architecture-flow div{position:relative;min-height:150px;padding:1.25rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between}
+.architecture-flow div:not(:last-child):after{content:'→';position:absolute;right:-.7rem;top:50%;z-index:2;width:1.4rem;height:1.4rem;border-radius:50%;display:grid;place-items:center;background:var(--lime);font-size:.8rem}
+.architecture-flow span{font:.65rem var(--mono);color:var(--green)}
+.decisions{background:#e2eedf}.decisions>div{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.decisions article{padding:2rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.decisions h3{font-size:1.25rem}.decisions p,.role-note>p:last-child{color:#58665f}
+.role-note{display:grid;grid-template-columns:.3fr .7fr;gap:4rem;border-bottom:1px solid var(--line)}.role-note>p:last-child{font-size:1.25rem}.section-label{margin-bottom:1rem}
+.project-tools{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap}.project-search{min-width:min(100%,340px);padding:.8rem 1rem;border:1px solid var(--line);background:white;font:inherit}.result-count{margin-left:auto;font:.65rem var(--mono);text-transform:uppercase;color:#657069}
+@media(max-width:850px){.evidence-metrics,.architecture-flow,.decisions>div{grid-template-columns:1fr 1fr}.role-note{grid-template-columns:1fr;gap:1rem}.architecture-flow div:nth-child(even):after{display:none}}
+@media(max-width:520px){.evidence-metrics,.architecture-flow,.decisions>div{grid-template-columns:1fr}.architecture-flow div:after{display:none}.result-count{width:100%;margin:0}}
