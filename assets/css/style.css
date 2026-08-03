@@ -7,4 +7,6 @@
 @media(max-width:900px){.domain-grid{grid-template-columns:1fr 1fr}.volunteer{grid-template-columns:1fr}.hero-actions{flex-wrap:wrap}}
 @media(max-width:620px){.domain-grid{grid-template-columns:1fr}.domain-card{min-height:auto}}
 .open-source{background:#dcebdc}.oss-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-left:1px solid var(--line)}.oss-card{padding:clamp(2rem,4vw,4rem);border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;min-height:380px}.oss-card p,.oss-card span,.oss-card b{font:.68rem/1.7 var(--mono);text-transform:uppercase}.oss-card h3{font-size:clamp(1.5rem,2.5vw,2.5rem);line-height:1.2;margin:2rem 0 1rem}.oss-card span{color:#59675f}.oss-card b{margin-top:auto;padding-top:2rem}.oss-card:hover{background:var(--lime)}
+.availability{display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:start;background:var(--cream);border-top:1px solid var(--line)}.availability h2{font-size:clamp(2.5rem,5vw,5.5rem)}.availability>div:last-child>p{font-size:1.2rem;color:#58665f}.availability-links{display:flex;align-items:center;gap:2rem;flex-wrap:wrap;margin-top:2rem}
 @media(max-width:620px){.oss-grid{grid-template-columns:1fr}.oss-card{min-height:300px}}
+@media(max-width:760px){.availability{grid-template-columns:1fr}}
