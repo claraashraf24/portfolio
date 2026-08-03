@@ -1,0 +1,27 @@
+:root{--ink:#14221c;--forest:#0c2118;--green:#174f37;--lime:#dafa8b;--paper:#f8f7f1;--mist:#e2eedf;--line:rgba(20,34,28,.18);--mono:"DM Mono",monospace;--sans:"Manrope",sans-serif;--serif:"Playfair Display",serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0!important;padding:0!important;background:var(--paper)!important;color:var(--ink)!important;font:16px/1.75 var(--sans)!important}
+a{color:inherit}
+.story-header,.story-footer{padding:1.3rem clamp(1.25rem,7vw,8rem);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);font:500 .68rem var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.story-header a,.story-footer a{text-decoration:none}
+.story-brand{display:flex;align-items:center;gap:.8rem;font:700 1rem var(--sans)!important;letter-spacing:0!important;text-transform:none!important}
+.story-brand span{width:34px;height:34px;border:1px solid;border-radius:50%;display:grid;place-items:center;font:500 .65rem var(--mono)}
+.hero{max-width:none!important;margin:0!important;padding:clamp(5rem,10vw,9rem) clamp(1.25rem,7vw,8rem) clamp(3rem,7vw,6rem)!important;text-align:left!important;background:var(--paper)!important}
+.hero:before{content:"Journal · Clara Yousif";display:block;margin-bottom:1.25rem;color:var(--green);font:500 .68rem var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.hero h1{max-width:1050px;margin:0 0 1rem!important;color:var(--ink)!important;font:600 clamp(3rem,7vw,7rem)/1.02 var(--serif)!important;letter-spacing:-.045em}
+.hero h3{max-width:780px;margin:0 0 3rem!important;color:#58665f!important;font:500 clamp(1.05rem,2vw,1.45rem)/1.55 var(--sans)!important}
+.hero img{width:100%!important;max-width:1200px!important;max-height:700px;object-fit:cover;margin:0!important;border:1px solid var(--line)!important;border-radius:0!important;box-shadow:none!important}
+.section,.closing{width:min(1120px,calc(100% - 2.5rem));margin:0 auto!important;padding:clamp(3rem,7vw,6rem) 0!important;border-top:1px solid var(--line);animation:none!important}
+.section h2{margin:0 0 1.5rem!important;color:var(--green)!important;font:600 clamp(2rem,4vw,3.7rem)/1.1 var(--serif)!important;letter-spacing:-.03em}
+.section p,.closing p{font-size:clamp(1rem,1.4vw,1.18rem)!important;color:#46554e}
+.content-row,.content-row.reverse{display:grid!important;grid-template-columns:minmax(260px,.8fr) minmax(300px,1.2fr);align-items:center;gap:clamp(2rem,6vw,6rem)!important;margin:0!important}
+.content-row.reverse>*:first-child{order:2}.content-row.reverse>*:last-child{order:1}
+.content-row img,.content-row video,.content-row iframe,.section>iframe{width:100%!important;max-width:none!important;min-height:320px;object-fit:cover;border:1px solid var(--line)!important;border-radius:0!important;box-shadow:none!important}
+.section>iframe{aspect-ratio:16/9;min-height:0}
+.section ul{padding:0;list-style:none}.section li{padding:1rem 0;border-bottom:1px solid var(--line)}.section li:before{content:"✦";color:var(--green);margin-right:.75rem}
+.button-link{display:inline-block;margin-top:1rem;padding:1rem 1.3rem;background:var(--forest)!important;color:#fff!important;text-decoration:none!important;font:500 .7rem var(--mono);letter-spacing:.06em;text-transform:uppercase;border-radius:0!important}
+.family-photos{display:grid!important;grid-template-columns:1fr 1fr;gap:1rem!important}.family-photos img{width:100%;max-width:none!important;border:1px solid var(--line)!important;border-radius:0!important;box-shadow:none!important}
+.closing{text-align:left!important;background:var(--mist);width:100%;padding-left:clamp(1.25rem,7vw,8rem)!important;padding-right:clamp(1.25rem,7vw,8rem)!important}
+.story-footer{border:0;background:var(--forest);color:#fff}
+@media(max-width:760px){.story-header{align-items:flex-start;gap:1rem}.content-row,.content-row.reverse{grid-template-columns:1fr}.content-row.reverse>*{order:initial!important}.hero h1{font-size:clamp(2.8rem,14vw,4.5rem)}.family-photos{grid-template-columns:1fr}.story-footer{align-items:flex-start;flex-direction:column;gap:1rem}}
