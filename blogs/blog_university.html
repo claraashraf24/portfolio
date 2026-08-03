@@ -1,261 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biomedical Engineering Life — Cairo University</title>
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <style>
-      body {
-        font-family: 'Poppins', sans-serif;
-        background: #111;
-        color: white;
-        line-height: 1.8;
-        padding: 20px;
-      }
-
-      /* Animations */
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @keyframes zoomIn {
-        from {
-          opacity: 0;
-          transform: scale(0.9);
-        }
-        to {
-          opacity: 1;
-          transform: scale(1);
-        }
-      }
-
-      .hero {
-        text-align: center;
-        margin: 2rem auto;
-        animation: fadeInUp 1s ease forwards;
-      }
-      .hero h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
-      }
-      .hero h3 {
-        font-size: 1.3rem;
-        color: #ccc;
-        margin-bottom: 1.5rem;
-      }
-      .hero img {
-        display: block;
-        margin: 0 auto; /* center the image */
-        max-width: 60%;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
-        animation: zoomIn 1.5s ease forwards;
-      }
-
-      .section {
-        margin: 3rem 0;
-        animation: fadeInUp 1.2s ease forwards;
-      }
-      .content-row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 2rem;
-        flex-wrap: wrap;
-        margin-bottom: 2rem;
-      }
-      .content-row img,
-      .content-row video {
-        flex: 1;
-        max-width: 320px;
-        border-radius: 8px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-        transition: transform 0.3s ease;
-      }
-      .content-row img:hover,
-      .content-row video:hover {
-        transform: scale(1.05);
-      }
-      .content-row p {
-        flex: 2;
-        font-size: 1.05rem;
-      }
-      .content-row.reverse {
-        flex-direction: row-reverse;
-      }
-
-      h2 {
-        color: #ff4d6d;
-        margin-bottom: 1rem;
-      }
-
-      ul {
-        list-style-type: '✔ ';
-        margin-left: 1.2rem;
-      }
-
-      .closing {
-        text-align: center;
-        margin-top: 3rem;
-      }
-
-      .family-photos {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-        margin: 1.5rem 0;
-      }
-
-      .family-photos img {
-        max-width: 30%; /* smaller than before */
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-        transition: transform 0.3s ease;
-      }
-
-      .family-photos img:hover {
-        transform: scale(1.05);
-      }
-
-      @media (max-width: 768px) {
-        .family-photos img {
-          max-width: 80%; /* stack and resize on mobile */
-        }
-      }
-    </style>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#08130f" />
+    <meta name="description" content="How biomedical engineering at Cairo University shaped Clara Yousif's approach to medical imaging, software, AI, and dependable healthcare technology." />
+    <title>Biomedical Engineering at Cairo University — Clara Yousif</title>
+    <link rel="icon" href="../assets/images/logo.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/blog.css" />
   </head>
   <body>
-    <header class="story-header"><a class="story-brand" href="../index.html"><span>CY</span> Clara Yousif</a><a href="../index.html#writing">All stories →</a></header>
-    <!-- Hero Section -->
-    <div class="hero">
-      <h1>Biomedical Engineering at Cairo University</h1>
-      <h3>A Journey from Freshman Curiosity to Senior Year Achievements</h3>
-      <img
-        src="../assets/images/cairo_unviersity.jpg"
-        alt="Cairo University Campus"
-      />
-    </div>
+    <header class="story-header">
+      <a class="story-brand" href="../index.html"><span>CY</span> Clara Yousif</a>
+      <a href="../index.html#writing">All stories →</a>
+    </header>
 
-    <!-- Year 1-2 -->
-    <div class="section">
-      <div class="content-row">
-        <img src="../assets/images/planning_pic.jpg" alt="Foundation Years" />
-        <p>
-          <strong>Years 1 & 2:</strong> The first two years were all about the
-          basics: anatomy, physiology, physics, and electronics. It felt like
-          stepping into two worlds at once: medicine and engineering. Honestly,
-          it was overwhelming at times, but also exciting because it laid the
-          ground for everything that came after. Most days were spent buried in
-          classrooms and libraries, slowly piecing together the foundation we’d
-          build on later.
-        </p>
-      </div>
-    </div>
+    <main>
+      <section class="hero">
+        <p class="story-meta">Education · Cairo · 2019—2024</p>
+        <h1>Where medicine met <em>engineering.</em></h1>
+        <h3>Five years at Cairo University shaped how I approach medical imaging, intelligent software, and technology designed for real clinical environments.</h3>
+        <img src="../assets/images/cairo_unviersity.jpg" alt="Historic Cairo University campus building" />
+      </section>
 
-    <!-- Year 3 -->
-    <div class="section">
-      <div class="content-row reverse">
-        <img src="../assets/images/cat_pic.jpg" alt="Labs in Year 3" />
-        <p>
-          <strong>Year 3:</strong> We finally got into courses like imaging,
-          medical devices, and software systems, and it wasn’t just theory
-          anymore. Labs and projects started to connect the dots — I could
-          actually see how what we were learning could turn into real healthcare
-          solutions. It was the first time I felt, “okay, this is why I chose
-          biomedical engineering.”
-        </p>
-      </div>
-    </div>
+      <section class="article-intro">
+        <p class="eyebrow">The foundation</p>
+        <p class="article-lede">Biomedical engineering taught me to move between disciplines: to understand the physiology behind a problem, the signals and images that represent it, and the software systems that can make that information useful.</p>
+        <div class="fact-grid">
+          <div><span>Degree</span><strong>BSc Biomedical Engineering</strong></div>
+          <div><span>University</span><strong>Cairo University</strong></div>
+          <div><span>Focus</span><strong>Imaging · AI · Software</strong></div>
+          <div><span>Result</span><strong>Very Good</strong></div>
+        </div>
+      </section>
 
-    <!-- Year 4-5 and Senior Year -->
-    <div class="section">
-      <div class="content-row">
-        <video
-          controls
-          width="350"
-          style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3)"
-        >
-          <source src="../assets/images/senior_team.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <p>
-          <strong>Years 4 & 5:</strong> Senior year was all about sleepless
-          nights, working side by side with my team, and of course, our
-          graduation project. It was exhausting but honestly the most rewarding
-          part of the whole journey. Every assignment, every presentation felt
-          less like schoolwork and more like real preparation for what comes
-          after.
-        </p>
-      </div>
-    </div>
+      <section class="section">
+        <div class="content-row">
+          <img src="../assets/images/dicom_viewer.png" alt="Medical imaging viewer showing MRI data" />
+          <div>
+            <p class="eyebrow">Learning across systems</p>
+            <h2>From anatomy to algorithms</h2>
+            <p>The early curriculum built a base in anatomy, physiology, physics, electronics, signals, and instrumentation. Later courses connected those foundations to medical imaging, device design, software development, and healthcare information systems.</p>
+            <p>That combination changed how I solve technical problems. A useful healthcare system needs more than an accurate model: it also needs reliable data, a clear interface, careful validation, and an understanding of the people who will use it.</p>
+          </div>
+        </div>
+      </section>
 
-    <!-- Graduation Project -->
-    <div class="section">
-      <h2>🎓 Graduation Project</h2>
-      <p>
-        Our project focused on
-        <em>3D Brain Tumor Segmentation and AR Visualization</em>. We combined
-        CNNs, TensorFlow, and Unity to create a system that could aid doctors in
-        diagnosis and surgical planning.
-      </p>
-      <p>
-        👉 You can read the full story
-        <a
-          href="blog_graduation.html"
-          style="color: #ff4d6d; text-decoration: underline"
-          >here</a
-        >.
-      </p>
-    </div>
+      <section class="section">
+        <div class="content-row reverse">
+          <img src="../assets/images/cnn_model.png" alt="Convolutional neural network architecture used for medical-image analysis" />
+          <div>
+            <p class="eyebrow">Technical direction</p>
+            <h2>Medical imaging became my bridge to AI</h2>
+            <p>Imaging projects brought together the parts of engineering I enjoyed most: visual data, signal processing, computer vision, model evaluation, and product development. I worked with MRI and DICOM workflows while learning how CNNs and segmentation architectures can surface clinically meaningful patterns.</p>
+            <p>This work led naturally toward applied machine learning and later toward the data pipelines, APIs, deployment practices, and monitoring required to turn a model into a dependable system.</p>
+          </div>
+        </div>
+      </section>
 
-    <!-- Memories -->
-    <div class="section">
-      <h2>💡 Key Memories</h2>
-      <ul>
-        <li>
-          Morning walks to campus, usually rushing because I was almost late.
-        </li>
-        <li>
-          Late nights working on assignments, surviving on tea, snacks, and
-          random chats with friends.
-        </li>
-        <li>
-          Exams that felt impossible at the time but later just turned into
-          funny stories.
-        </li>
-      </ul>
-    </div>
+      <section class="section project-bridge">
+        <div>
+          <p class="eyebrow">Capstone</p>
+          <h2>3D brain-tumor segmentation and AR visualization</h2>
+          <p>For my final engineering capstone, our team connected deep-learning segmentation and classification with a custom DICOM viewer and an augmented-reality experience for interactive 3D exploration. The project was selected as a finalist for Best Engineering Capstone Project.</p>
+          <a class="button-link" href="blog_graduation.html">Read the full capstone story →</a>
+        </div>
+        <img src="../assets/images/projects/brain-tumor-segmentation-cover.webp" alt="Scientific visualization of MRI tumor segmentation and 3D reconstruction" />
+      </section>
 
-    <!-- Closing -->
-    <div class="closing">
-      <p>
-        Biomedical Engineering at Cairo University wasn’t just an education, it
-        was a life chapter that gave me knowledge, resilience, and friendships
-        I’ll always carry with me.
-      </p>
+      <section class="section">
+        <p class="eyebrow">What stayed with me</p>
+        <h2>An engineering mindset built for real constraints</h2>
+        <ul>
+          <li>Translate clinical and operational needs into testable technical requirements.</li>
+          <li>Evaluate models with attention to data quality, limitations, and explainability.</li>
+          <li>Connect research prototypes to usable software and visualization workflows.</li>
+          <li>Work across disciplines and communicate decisions to technical and non-technical collaborators.</li>
+        </ul>
+      </section>
 
-      <div class="family-photos">
-        <img src="../assets/images/family_photo_1.jpg" alt="Family Photo 1" />
-        <img src="../assets/images/family_photo_2.jpg" alt="Family Photo 2" />
-      </div>
+      <section class="closing">
+        <p class="eyebrow">Looking forward</p>
+        <p>Cairo University gave me the multidisciplinary foundation I now bring to AI, MLOps, data engineering, and product development. I still approach every system with the same question: how can the technology be rigorous enough for the problem and clear enough for the person using it?</p>
+      </section>
+    </main>
 
-      <p>
-        Grateful for my professors, friends, and family who made it possible.
-      </p>
-    </div>
-    <footer class="story-footer"><a href="../index.html">← Back to portfolio</a><a href="mailto:clarayoussef01@gmail.com">Let’s talk ↗</a></footer>
+    <footer class="story-footer">
+      <a href="../index.html">← Back to portfolio</a>
+      <a href="mailto:clarayoussef01@gmail.com">Let’s talk ↗</a>
+    </footer>
   </body>
 </html>
