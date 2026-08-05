@@ -22,6 +22,9 @@ if (!item) {
   const architecture = item.architecture?.length ? `<section class="architecture"><p class="eyebrow">System architecture</p><h2>From raw input to decision support.</h2><div class="architecture-flow">${item.architecture.map((step,index)=>`<div><span>${String(index+1).padStart(2,'0')}</span><strong>${step}</strong></div>`).join('')}</div></section>` : '';
   const decisions = item.decisions?.length ? `<section class="decisions"><p class="eyebrow">Engineering decisions</p><h2>Tradeoffs made explicit.</h2><div>${item.decisions.map(([title,body])=>`<article><h3>${title}</h3><p>${body}</p></article>`).join('')}</div></section>` : '';
   const role = item.role ? `<section class="role-note"><p class="eyebrow">My role &amp; attribution</p><p>${item.role}</p></section>` : '';
+  const cover = item.hasVerifiedVisual
+    ? `<figure class="cover"><img src="${asset(item.image)}" alt="${item.title} project-specific visual"></figure>`
+    : '';
 
   root.innerHTML = `<article>
     <section class="project-hero">
@@ -30,7 +33,7 @@ if (!item) {
       <p class="lede">${item.summary}</p>
       <div class="hero-links">${sourceLink}<span>${item.status.includes('Collaborative') || item.status.includes('team') ? 'Collaborative work' : 'Project by Clara Yousif'}</span></div>
     </section>
-    <figure class="cover"><img src="${asset(item.image)}" alt="${item.title} project evidence"></figure>
+    ${cover}
     ${metrics}
     <section class="case-grid">
       <div><p class="eyebrow">The challenge</p><h2>Why this project exists</h2><p>${item.challenge}</p></div>
