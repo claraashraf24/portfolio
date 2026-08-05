@@ -33,3 +33,18 @@ window.PROJECTS = [
   {id:'support-ticket-triage',title:'AI Support Ticket Triage & SLA Monitor',category:'Support operations',year:'2026',repo:null,image:'../../assets/images/sla_monitoring.png',gallery:[],summary:'NLP-assisted ticket classification, escalation-risk detection, and SLA monitoring backend.',challenge:'Support queues need consistent prioritization, concise issue understanding, and early visibility into SLA risk.',solution:'Built ticket classification for priority, category, sentiment, and escalation risk; structured LLM summaries and entity extraction; PostgreSQL state tracking; FastAPI services; and Dockerized local development.',stack:['Python','FastAPI','PostgreSQL','Docker','NLP','LLMs'],highlights:['Structured triage outputs','SLA risk monitoring','Ticket state history','Reproducible containerized backend'],status:'Local project; production integrations and public screenshots are not currently available.'},
   {id:'open-source-ir',title:'Open-Source Information Retrieval Reproductions',category:'Open source',year:'2026',repo:'castorini/pyserini',image:'../../assets/images/research.png',gallery:[],summary:'Reproduced and documented sparse and dense retrieval baselines for Castorini’s Anserini and Pyserini ecosystems.',challenge:'Search research depends on reproducible baselines across operating systems, indexes, retrieval models, and evaluation tooling.',solution:'Reproduced MS MARCO BM25, NFCorpus BGE dense retrieval, and NFCorpus SPLADE learned-sparse results; contributed documentation logs and environment notes through upstream pull requests.',stack:['Pyserini','Anserini','BM25','BGE','SPLADE','Java','Python','IR evaluation'],highlights:['Verified MS MARCO BM25 MRR@10 of 0.187412','6,980 queries evaluated','Dense and learned-sparse NFCorpus reproductions','Upstream PRs #3085 and #2382'],status:'Verified open-source contribution work. Earlier step-by-step PRs were consolidated into Anserini PR #3085 and Pyserini PR #2382.'}
 ];
+
+const verifiedProjectVisualIds = new Set([
+  'urbanmind-ai',
+  'cortexops-ai',
+  'lyrisense',
+  'brain-tumor-ar',
+  'business-dashboard',
+  'sla-dashboard',
+  'ai-ml-capstone',
+  'khrooga-platform'
+]);
+
+window.PROJECTS = window.PROJECTS.map((project) => verifiedProjectVisualIds.has(project.id)
+  ? {...project, hasVerifiedVisual: true}
+  : {...project, image: null, gallery: [], hasVerifiedVisual: false});
